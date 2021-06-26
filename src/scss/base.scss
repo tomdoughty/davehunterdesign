@@ -36,7 +36,7 @@ body {
 
 a:not([class]) {
   color: currentColor;
-  text-decoration-color: get-color('quinary');
+  text-decoration-color: get-color('primary');
 }
 
 :focus {
@@ -52,7 +52,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 900;
+  font-weight: 700;
 
   @include apply-utility('font', 'sans');
   @include apply-utility('leading', 'flat');
@@ -89,3 +89,26 @@ h4 {
 @import 'blocks/nav';
 @import 'blocks/button';
 @import 'blocks/skip-link';
+
+.main {
+  padding: get-size('800') 0;
+}
+
+h1 {
+  font-size: get-size('800');
+  margin-bottom: get-size('700');
+}
+
+a {
+  text-underline-offset: 0.2em;
+
+  &:hover {
+    color: get-color('primary-shade');
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em;
+  }
+}
+
+.secondary-text {
+  color: get-color('dark-glare');
+}

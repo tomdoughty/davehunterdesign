@@ -30,15 +30,15 @@ $gorko-size-scale: (
  * You can also use them to power borders, fills or shadows, for example.
  */
 $gorko-colors: (
-  'dark': #38445b,
-  'dark-shade': #263147,
-  'dark-glare': #505c73,
-  'light': #f9f4e3,
-  'light-shade': #fff6d7,
-  'light-glare': #fdfbf3,
-  'primary': #513aa6,
-  'primary-shade': #432e92,
-  'primary-glare': #654ac9,
+  'dark': #455a64,
+  'dark-shade': #1c313a,
+  'dark-glare': #718792,
+  'light': #eceff1,
+  'light-shade': #babdbe,
+  'light-glare': #ffffff,
+  'primary': #00838f,
+  'primary-shade': #005662,
+  'primary-glare': #4fb3bf,
   'secondary': #6ac2b6,
   'secondary-shade': #35a495,
   'secondary-glare': #98e2d8,
@@ -76,8 +76,8 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': '"Literata", Georgia, serif',
-      'sans': '"Red Hat Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      'base': '"Inter", Arial, sans-serif',
+      'sans': '"Inter", Arial, sans-serif',
     ),
     'output': 'standard',
     'property': 'font-family',
@@ -114,12 +114,13 @@ $gorko-config: (
   'weight': (
     'items': (
       'normal': 400,
-      'bold': 900,
+      'bold': 700,
     ),
     'output': 'standard',
     'property': 'font-weight',
   ),
   'breakpoints': (
+    'sm': '(min-width: 26.3em)',
     'md': '(min-width: 37em)',
     'lg': '(min-width: 62em)',
   ),

@@ -3,8 +3,8 @@
 
   display: inline-block;
   padding: 0.5rem 2rem;
-  background: get-color('quaternary-glare');
-  color: get-color('dark-shade');
+  background: get-color('primary');
+  color: get-color('light-glare');
   border: 2px solid;
   text-transform: uppercase;
   text-decoration: none;
@@ -15,8 +15,8 @@
 
   // Make sure hover state trumps all variants with a good ol’ important
   &:hover {
-    background: get-color('quaternary') !important;
-    color: get-color('dark-shade') !important;
+    background: get-color('primary-shade') !important;
+    color: get-color('light-glare') !important;
   }
 
   // Add a ghost modifier

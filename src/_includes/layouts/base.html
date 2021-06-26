@@ -31,13 +31,13 @@
     <div class="site-wrap">
       {% include "partials/site-head.html" %}
     
-      <main tabindex="-1" id="main-content">
+      <main tabindex="-1" id="main-content" class="main">
         {% block content %}{% endblock %}
       </main>
     
       <footer role="contentinfo" class="site-foot">
         <div class="wrapper">
-          <p>This is a made up agency for the course, <a href="https://piccalil.li/course/learn-eleventy-from-scratch/">“Learn Eleventy From Scratch”</a>.</p>
+            <p class="secondary-text">&copy; 2021 Dave Hunter</p>
         </div>
       </footer>
     </div>    

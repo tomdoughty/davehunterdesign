@@ -1,34 +1,28 @@
 .site-head {
-  padding: get-size('600') 0;
+  background: get-color('light-glare');
+  padding: get-size('400') 0;
 
-  &__inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  @include media-query('sm') {
+    padding: get-size('500') 0;
   }
+}
 
-  &__brand {
-    flex-shrink: 0;
-    margin-inline-end: get-size('600'); // Prevents nav bunching up to the logo
+.site-head__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    // Optical adjustment to account for the offset the sunken 3s create
-    transform: translateY(0.25rem);
+.site-head__brand {
+  color: get-color('dark-shade');
+  flex-shrink: 0;
+  font-size: get-size('100');
+  font-weight: 700;
+  margin-inline-end: get-size('600'); // Prevents nav bunching up to the logo
+  text-decoration: none;
+}
 
-    svg {
-      width: 100px;
-    }
-  }
-
-  &__nav {
-    padding: get-size('300') 0;
-  }
-
-  @include media-query('md') {
-    &__brand {
-      svg {
-        width: 160px;
-      }
-    }
-  }
+.site-head__nav {
+  padding: get-size('300') 0;
 }
