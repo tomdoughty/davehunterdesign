@@ -91,7 +91,7 @@ h4 {
 @import 'blocks/skip-link';
 
 .main {
-  padding: get-size('800') 0;
+  padding: get-size('900') 0;
 }
 
 a {
@@ -134,4 +134,5 @@ p {
 
 .link {
   color: get-color('primary');
+  text-decoration-color: get-color('primary');
 }
