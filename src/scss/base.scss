@@ -94,13 +94,9 @@ h4 {
   padding: get-size('800') 0;
 }
 
-h1 {
-  font-size: get-size('800');
-  margin-bottom: get-size('700');
-}
-
 a {
-  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.15em;
 
   &:hover {
     color: get-color('primary-shade');
@@ -109,6 +105,33 @@ a {
   }
 }
 
+h1 {
+  font-size: get-size('900');
+  margin-bottom: get-size('700');
+}
+
+h2 {
+  font-size: get-size('700');
+  margin-bottom: get-size('600');
+}
+
+p {
+  margin-bottom: get-size('600');
+  max-width: 44rem;
+
+  + h2 {
+    padding-top: get-size('600');
+  }
+}
+
 .secondary-text {
   color: get-color('dark-glare');
+}
+
+.intro {
+  font-size: get-size('600');
+}
+
+.link {
+  color: get-color('primary');
 }

@@ -32,12 +32,13 @@
       {% include "partials/site-head.html" %}
     
       <main tabindex="-1" id="main-content" class="main">
-        {% block content %}{% endblock %}
+        {% block mainInner %}
+        {% endblock %}
       </main>
     
       <footer role="contentinfo" class="site-foot">
         <div class="wrapper">
-            <p class="secondary-text">&copy; 2021 Dave Hunter</p>
+          <p class="secondary-text">&copy; 2021 Dave Hunter</p>
         </div>
       </footer>
     </div>    
