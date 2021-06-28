@@ -106,13 +106,33 @@ a {
 }
 
 h1 {
-  font-size: get-size('900');
-  margin-bottom: get-size('700');
+  font-size: get-size('800');
+  margin-bottom: get-size('600');
+
+  @include media-query('md') {
+    font-size: get-size('900');
+    margin-bottom: get-size('700');
+  }
 }
 
 h2 {
   font-size: get-size('700');
-  margin-bottom: get-size('600');
+  margin-bottom: get-size('500');
+
+  @include media-query('md') {
+    font-size: get-size('800');
+    margin-bottom: get-size('600');
+  }
+}
+
+h3 {
+  font-size: get-size('600');
+  margin-bottom: get-size('500');
+
+  @include media-query('md') {
+    font-size: get-size('700');
+    margin-bottom: get-size('600');
+  }
 }
 
 p {
@@ -136,3 +156,26 @@ p {
   color: get-color('primary');
   text-decoration-color: get-color('primary');
 }
+
+.card__img {
+  display: block;
+  margin-bottom: get-size('600');
+  padding-top: get-size('500');
+
+  @include media-query('md') {
+    padding-top: get-size('600');
+  }
+}
+
+.card__title {
+  margin-bottom: get-size('500');
+
+  a {
+    color: get-color('primary');
+
+    &:hover {
+      color: get-color('primary-shade');
+    }
+  }
+}
+
