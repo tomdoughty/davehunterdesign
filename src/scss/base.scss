@@ -89,6 +89,7 @@ h4 {
 @import 'blocks/nav';
 @import 'blocks/button';
 @import 'blocks/skip-link';
+@import 'blocks/card';
 
 .main {
   padding: get-size('900') 0;
@@ -116,11 +117,11 @@ h1 {
 }
 
 h2 {
-  font-size: get-size('700');
+  font-size: get-size('600');
   margin-bottom: get-size('500');
 
   @include media-query('md') {
-    font-size: get-size('800');
+    font-size: get-size('700');
     margin-bottom: get-size('600');
   }
 }
@@ -157,25 +158,4 @@ p {
   text-decoration-color: get-color('primary');
 }
 
-.card__img {
-  display: block;
-  margin-bottom: get-size('600');
-  padding-top: get-size('500');
-
-  @include media-query('md') {
-    padding-top: get-size('600');
-  }
-}
-
-.card__title {
-  margin-bottom: get-size('500');
-
-  a {
-    color: get-color('primary');
-
-    &:hover {
-      color: get-color('primary-shade');
-    }
-  }
-}
 
