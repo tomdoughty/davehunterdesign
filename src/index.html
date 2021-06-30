@@ -6,42 +6,26 @@
   <h1>Hello, I'm Dave</h1>
   <p class="intro">I'm an interaction designer. I design and build digital products based on people's needs and behaviours.</p>
 
+  <h2 class="visually-hidden">My work</h2>
   <ul class="card-group">
     <li class="card card--clickable">  
       <img class="card__img" src="/images/work/portfolio_nhs_service_manual.png" alt="">
       <h3 class="card__title">
         <a href="/work">NHS digital service manual</a>
       </h3>
-      <p class="card__description">Ten common pitfalls to avoid when designing card components.</p>
+      <p class="card__description">Building a design system for the NHS.</p>
     </li>
     <li class="card card--clickable">  
       <img class="card__img" src="/images/work/portfolio_lcc.png" alt="">
       <h3 class="card__title">
         <a href="/work">Leeds City Council</a>
       </h3>
-      <p class="card__description">Ten common pitfalls to avoid when designing card components.</p>
+      <p class="card__description">Redesigning leeds.gov.uk in a user-centered way.</p>
     </li> 
   </ul>
 
-  <p><a class="link" href="/work">See more work</a></p>
-
-
-  <h2>Contact</h2>
-  <p>If you've got a question or you'd like to work with me <a class="link" href="#">get in touch</a>.</p>
+  <a class="button" href="/work">My work</a>
 
 </div>
-
-<script>
-  // Loops through dom and finds all elements with nhsuk-card--clickable class
-  document.querySelectorAll('.card--clickable').forEach((card) => {
-      // Check if card has a link within it
-      if (card.querySelector('a') !== null) {
-        // Clicks the link within the heading to navigate to desired page
-        card.addEventListener('click', () => {
-          card.querySelector('a').click();
-        });
-      }
-    });
-</script>
 
 {% endblock %}

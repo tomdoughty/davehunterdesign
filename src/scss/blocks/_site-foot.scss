@@ -1,3 +1,42 @@
 .site-foot {
   padding: get-size('500') 0 get-size('700') 0;
 }
+
+.site-foot__content {
+  border-top: 1px solid get-color('light-shade');
+  padding-top: get-size('500');
+
+  @include media-query('md') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site-foot__email {
+  color: get-color('primary');
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.site-foot__link-list {
+  list-style: none;
+
+  @include media-query('md') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-foot__link-item {
+
+  @include media-query('md') {
+    padding-inline-start: get-size('500');
+  }
+
+  a {
+    color: get-color('dark');
+    text-decoration-color: get-color('dark');
+  }
+}

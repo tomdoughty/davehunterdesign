@@ -2,16 +2,13 @@
   @extend .radius;
 
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 1rem 1.5rem;
   background: get-color('primary');
+  border-radius: 0.75rem;
   color: get-color('light-glare');
-  border: 2px solid;
-  text-transform: uppercase;
+  box-shadow: 0 2px 0 0 get-color('primary-shade');
   text-decoration: none;
   text-align: center;
-
-  @include apply-utility('font', 'sans');
-  @include apply-utility('weight', 'bold');
 
   // Make sure hover state trumps all variants with a good ol’ important
   &:hover {

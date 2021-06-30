@@ -38,9 +38,30 @@
     
       <footer role="contentinfo" class="site-foot">
         <div class="wrapper">
-          <p class="secondary-text">&copy; 2021 Dave Hunter</p>
+          <div class="site-foot__content">
+          <p class="site-foot__email"><a href="mailto:davehunterdesign@gmail.com">davehunterdesign@gmail.com</a></p>
+          <ul class="site-foot__link-list">
+            <li class="site-foot__link-item"><a href="">Twitter</a></li>
+            <li class="site-foot__link-item"><a href="">LinkedIn</a></li>
+            <li class="site-foot__link-item"><a href="">GitHub</a></li>
+          </ul>
+        </div>
         </div>
       </footer>
-    </div>    
+    </div> 
+    
+    <script>
+      // Loops through dom and finds all elements with nhsuk-card--clickable class
+      document.querySelectorAll('.card--clickable').forEach((card) => {
+          // Check if card has a link within it
+          if (card.querySelector('a') !== null) {
+            // Clicks the link within the heading to navigate to desired page
+            card.addEventListener('click', () => {
+              card.querySelector('a').click();
+            });
+          }
+        });
+    </script>
+
   </body>
 </html>

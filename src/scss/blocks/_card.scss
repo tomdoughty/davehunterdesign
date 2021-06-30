@@ -1,10 +1,11 @@
 ul.card-group {
   list-style: none;
   padding-left: 0;
-  padding-top: get-size('600');
+  padding-top: get-size('700');
   display: grid;
-  grid-column-gap: get-size('600');
-  grid-row-gap: get-size('600');
+  grid-column-gap: get-size('700');
+  grid-row-gap: get-size('700');
+  margin-bottom: get-size('400');
 
   @include media-query('md') {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -24,9 +25,15 @@ ul.card-group {
   }
 }
 
+.card__text {
+  background: get-color('light-glare');
+  padding: get-size('500');
+}
+
 .card__title {
   font-size: get-size('500');
   margin-bottom: get-size('400');
+  padding: 0;
 
   @include media-query('md') {
     font-size: get-size('600');
@@ -34,7 +41,8 @@ ul.card-group {
   }
 
   a {
-    color: get-color('primary');
+    color: get-color('dark-shade');
+    text-decoration-color: get-color('dark-shade');
 
     &:hover {
       color: get-color('primary-shade');
@@ -42,8 +50,18 @@ ul.card-group {
   }
 }
 
-.card-description {
+.card__description {
   color: get-color('dark');
+}
+
+.card__meta {
+  color: get-color('dark');
+  font-size: get-size('400');
+  margin-bottom: get-size('300');
+
+  @include media-query('md') {
+    margin-bottom: get-size('300');
+  }
 }
 
 .card--clickable {
