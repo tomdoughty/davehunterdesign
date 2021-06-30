@@ -4,11 +4,12 @@ ul.card-group {
   padding-top: get-size('700');
   display: grid;
   grid-column-gap: get-size('700');
-  grid-row-gap: get-size('700');
+  grid-row-gap: get-size('400');
   margin-bottom: get-size('400');
 
   @include media-query('md') {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-row-gap: get-size('700');
   }
 }
 
