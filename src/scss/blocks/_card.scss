@@ -17,42 +17,13 @@ ul.card-group {
   }
 }
 
-.card__text {
-  background: get-color('light-glare');
-  padding: get-size('500');
-}
-
 .card__title {
   font-size: get-size('500');
   margin-bottom: get-size('400');
-  padding: 0;
 
   @include media-query('md') {
     font-size: get-size('600');
     margin-bottom: get-size('400');
-  }
-
-  a {
-    color: get-color('dark-shade');
-    text-decoration-color: get-color('dark-shade');
-
-    &:hover {
-      color: get-color('primary-shade');
-    }
-  }
-}
-
-.card__description {
-  color: get-color('dark');
-}
-
-.card__meta {
-  color: get-color('dark');
-  font-size: get-size('400');
-  margin-bottom: get-size('300');
-
-  @include media-query('md') {
-    margin-bottom: get-size('300');
   }
 }
 
