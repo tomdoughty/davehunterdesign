@@ -29,7 +29,7 @@ ul.card-group {
 
   @include media-query('md') {
     font-size: get-size('600');
-    margin-bottom: get-size('500');
+    margin-bottom: get-size('400');
   }
 
   a {
