@@ -24,9 +24,13 @@ body {
   background: get-color('light');
   color: get-color('dark-shade');
   line-height: 1.5;
-  font-size: get-size('500');
+  font-size: get-size('450');
 
   @include apply-utility('font', 'base');
+
+  @include media-query('md') {
+    font-size: get-size('500');
+  }
 }
 
 a:not([class]) {
@@ -146,7 +150,11 @@ p {
 }
 
 .intro {
-  font-size: get-size('600');
+  font-size: get-size('500');
+
+  @include media-query('md') {
+    font-size: get-size('600');
+  }
 }
 
 .link--primary {
@@ -162,6 +170,14 @@ p {
   font-weight: 700;
 }
 
+.text-small {
+  font-size: get-size('400');
+
+  @include media-query('md') {
+    font-size: get-size('450');
+  }
+}
+
 ul.list-group {
   margin-bottom: get-size('800');
   padding-top: get-size('400');
@@ -171,6 +187,6 @@ ul.list-group {
   margin-bottom: get-size('700');
 
   > * {
-    margin-bottom: get-size('300');
+    margin-bottom: get-size('250');
   }
 }
