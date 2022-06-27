@@ -22,15 +22,15 @@
 }
 
 body {
-  background: get-color('light-glare');
+  background: get-color('light');
   color: get-color('dark-shade');
   line-height: 1.5;
-  font-size: get-size('450');
+  font-size: get-size('400');
 
   @include apply-utility('font', 'base');
 
   @include media-query('md') {
-    font-size: get-size('500');
+    font-size: get-size('450');
   }
 }
 
@@ -94,10 +94,11 @@ h4 {
 @import 'blocks/card';
 
 .main {
-  padding: get-size('800') 0;
+  background: get-color('light-glare');
+  padding: get-size('700') 0;
 
   @include media-query('sm') {
-    padding: get-size('900') 0;
+    padding: get-size('800') 0;
   }
 }
 
@@ -126,11 +127,11 @@ h1 {
 
 h2 {
   font-size: get-size('600');
-  margin-bottom: get-size('500');
+  margin-bottom: get-size('400');
 
   @include media-query('md') {
     font-size: get-size('700');
-    margin-bottom: get-size('600');
+    margin-bottom: get-size('400');
   }
 }
 
@@ -206,7 +207,8 @@ ul.list-group {
 // Hero
 .hero {
   background: get-color('light');
-  padding: 80px 0;
+  margin-top: -4px;
+  padding: get-size('major') 0;
 
   .hero--wrapper{
     width: 50%;

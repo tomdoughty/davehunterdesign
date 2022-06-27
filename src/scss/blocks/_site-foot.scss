@@ -1,52 +1,9 @@
 .site-foot {
   background: get-color('light-shade');
+  font-size: get-size('500');
   padding: get-size('500') 0;
 
   @include media-query('sm') {
     padding: get-size('600') 0;
-  }
-}
-
-.site-foot__content {
-  @include media-query('md') {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.site-foot__email {
-  font-size: get-size('400');
-  list-style: none;
-  margin-bottom: get-size('400');
-
-  @include media-query('md') {
-    font-size: get-size('500');
-    margin-bottom: 0;
-  }
-}
-
-.site-foot__link-list {
-  list-style: none;
-
-  @include media-query('md') {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.site-foot__link-item {
-  font-size: get-size('400');
-  margin-bottom: get-size('400');
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  @include media-query('md') {
-    font-size: get-size('500');
-    margin-bottom: 0;
-    padding-inline-start: get-size('500');
   }
 }

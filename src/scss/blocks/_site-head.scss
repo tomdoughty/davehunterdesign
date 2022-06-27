@@ -1,5 +1,6 @@
 .site-head {
   background: get-color('light-glare');
+  border-bottom: 4px solid  get-color('light');
   padding: get-size('500') 0;
 
   @include media-query('sm') {

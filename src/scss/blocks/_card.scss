@@ -1,20 +1,22 @@
 ul.card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 45%);
+  grid-auto-rows: auto;
+  grid-gap: 5%;
   list-style: none;
   padding-left: 0;
-  padding-top: get-size('600');
   margin-bottom: get-size('300');
 
   @include media-query('sm') {
-    padding-top: get-size('700');
     margin-bottom: get-size('400');
   }
 }
 
 .card {
-  margin-bottom: get-size('800');
+  margin-bottom: get-size('400');
 
   @include media-query('sm') {
-    margin-bottom: get-size('900');
+    margin-bottom: get-size('400');
   }
 }
 
@@ -22,18 +24,22 @@ ul.card-group {
   margin-bottom: get-size('500');
 
   @include media-query('sm') {
-    margin-bottom: get-size('600');
+    margin-bottom: get-size('500');
   }
 }
 
 .card__title {
   font-size: get-size('500');
-  margin-bottom: get-size('400');
+  margin-bottom: get-size('200');
 
   @include media-query('sm') {
-    font-size: get-size('600');
-    margin-bottom: get-size('450');
+    font-size: get-size('500');
+    margin-bottom: get-size('300');
   }
+}
+
+.card__description {
+  margin-bottom: 0;
 }
 
 .card--clickable {
