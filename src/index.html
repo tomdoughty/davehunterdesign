@@ -1,11 +1,20 @@
 {% extends "layouts/base.html" %} 
 
+{% block hero %}
+<section class="hero">
+  <div class="wrapper">
+    <div class="hero--wrapper">
+      <h1>Hi, I'm Dave</h1>
+      <p class="intro intro--bold">Interaction / UX designer</p>
+      <p class="intro no-margin">I help solve complex problems using design, research and technology to deliver products that meet user and business needs.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
 {% block mainInner %}
 
 <div class="wrapper">
-  <h1>Hello, I'm Dave</h1>
-  <p class="intro">I'm an interaction designer. I design and build digital products based on people's needs and behaviours.</p>
-
   <h2 class="visually-hidden">My work</h2>
   <ul class="card-group">
     <li class="card card--clickable">  
@@ -24,7 +33,7 @@
     </li> 
   </ul>
 
-  <p><a href="/work">See all work</a></p>
+  <p><a class="link--arrow" href="/work">See all work</a></p>
 
 </div>
 

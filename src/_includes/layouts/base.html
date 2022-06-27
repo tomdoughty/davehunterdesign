@@ -30,6 +30,9 @@
   <body>
     <div class="site-wrap">
       {% include "partials/site-head.html" %}
+
+      {% block hero %}
+      {% endblock %}
     
       <main tabindex="-1" id="main-content" class="main">
         {% block mainInner %}
@@ -38,26 +41,10 @@
     
       <footer role="contentinfo" class="site-foot">
         <div class="wrapper">
-          <div class="site-foot__content">
-            <h2 class="visually-hidden">Contact me</h2>
-            <p class="site-foot__email">
-              <span class="visually-hidden">Email me at </span>
-              <a class="link--no-underline" href="mailto:davehunterdesign@gmail.com">davehunterdesign@gmail.com</a>
-            </p>
-            <h3 class="visually-hidden">Online profiles</h3>
-            <p class="visually-hidden">Find me on:</p>
-            <ul class="site-foot__link-list">
-              <li class="site-foot__link-item">
-                <a class="link--no-underline" href="https://twitter.com/dave_hunter_">Twitter</a>
-              </li>
-              <li class="site-foot__link-item">
-                <a class="link--no-underline" href="https://www.linkedin.com/in/david-hunter-438262145/">LinkedIn</a>
-              </li>
-              <li class="site-foot__link-item">
-                <a class="link--no-underline" href="https://github.com/davidhunter08">GitHub</a>
-              </li>
-            </ul>
-          </div>
+          I'm on
+          <a href="https://twitter.com/dave_hunter_">Twitter</a>, 
+          <a href="https://www.linkedin.com/in/david-hunter-438262145/">LinkedIn</a> and 
+          <a href="https://github.com/davidhunter08">GitHub</a>
         </div>
       </footer>
     </div> 

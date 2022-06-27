@@ -1,32 +1,29 @@
 .nav {
   line-height: 1;
-  margin-top: -#{get-size('400')};
-  margin-inline-start: -#{get-size('400')};
 
   &__list {
     display: flex;
     flex-wrap: wrap;
 
     > * {
-      padding-top: get-size('300');
       padding-inline-start: get-size('400');
 
       @include media-query('sm') {
-        padding-top: get-size('400');
         padding-inline-start: get-size('600');
       }
     }
   }
 
   a {
-    color: get-color('dark-shade');
+    color: get-color('primary');
     display: block;
     font-size: get-size('400');
+    font-weight: bold;
     position: relative;
-    text-decoration: none;
+    text-decoration: underline;
 
     @include media-query('sm') {
-      font-size: get-size('500');
+      font-size: get-size('450');
     }
 
     // Adds the fake border to active state items

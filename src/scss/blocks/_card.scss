@@ -1,18 +1,27 @@
 ul.card-group {
   list-style: none;
   padding-left: 0;
-  padding-top: get-size('700');
-  margin-bottom: get-size('400');
+  padding-top: get-size('600');
+  margin-bottom: get-size('300');
+
+  @include media-query('sm') {
+    padding-top: get-size('700');
+    margin-bottom: get-size('400');
+  }
 }
 
 .card {
-  margin-bottom: get-size('900');
+  margin-bottom: get-size('800');
+
+  @include media-query('sm') {
+    margin-bottom: get-size('900');
+  }
 }
 
 .card__img {
   margin-bottom: get-size('500');
 
-  @include media-query('md') {
+  @include media-query('sm') {
     margin-bottom: get-size('600');
   }
 }
@@ -21,9 +30,9 @@ ul.card-group {
   font-size: get-size('500');
   margin-bottom: get-size('400');
 
-  @include media-query('md') {
+  @include media-query('sm') {
     font-size: get-size('600');
-    margin-bottom: get-size('400');
+    margin-bottom: get-size('450');
   }
 }
 
