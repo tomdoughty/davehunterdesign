@@ -208,9 +208,16 @@ ul.list-group {
 .hero {
   background: get-color('light');
   margin-top: -4px;
-  padding: get-size('major') 0;
+  padding: get-size('800') 0;
+
+  @include media-query('sm') {
+    padding: get-size('major') 0;
+  }
+  
 
   .hero--wrapper{
-    width: 50%;
+    @include media-query('sm') {
+      width: 50%;
+    }
   }
 }
