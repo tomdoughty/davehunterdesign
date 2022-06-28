@@ -8,8 +8,7 @@ ul.card-group {
   margin-bottom: get-size('300');
 
   @include media-query('sm') {
-    grid-template-columns: repeat(auto-fill, 45%);
-    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fill, 50%);
     margin-bottom: get-size('400');
   }
 }
@@ -18,7 +17,7 @@ ul.card-group {
   margin-bottom: get-size('600');
 
   @include media-query('sm') {
-    margin-bottom: get-size('400');
+    margin-bottom: get-size('700');
   }
 }
 

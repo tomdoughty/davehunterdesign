@@ -1,17 +1,35 @@
 .nav {
   line-height: 1;
+  margin-top: get-size('200');
+
+  @include media-query('md') {
+    margin-top: 0;
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
 
+    @include media-query('md') {
+      padding-inline-start: get-size('600');
+    }
+
     > * {
       padding-inline-start: get-size('400');
 
-      @include media-query('sm') {
+      @include media-query('md') {
         padding-inline-start: get-size('600');
       }
     }
+
+    > *:first-child {
+      padding-inline-start: 0;
+
+      @include media-query('md') {
+        padding-inline-start: get-size('600');
+      }
+    }
+    
   }
 
   a {

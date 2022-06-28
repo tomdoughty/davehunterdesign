@@ -117,21 +117,21 @@ a {
 
 h1 {
   font-size: get-size('800');
-  margin-bottom: get-size('600');
+  margin-bottom: get-size('700');
 
   @include media-query('md') {
     font-size: get-size('900');
-    margin-bottom: get-size('600');
+    margin-bottom: get-size('800');
   }
 }
 
 h2 {
   font-size: get-size('600');
-  margin-bottom: get-size('400');
+  margin-bottom: get-size('600');
 
   @include media-query('md') {
     font-size: get-size('700');
-    margin-bottom: get-size('400');
+    margin-bottom: get-size('700');
   }
 }
 
@@ -213,11 +213,18 @@ ul.list-group {
   @include media-query('sm') {
     padding: get-size('major') 0;
   }
-  
 
   .hero--wrapper{
-    @include media-query('sm') {
+    @include media-query('lg') {
       width: 50%;
     }
+  }
+}
+
+.hero__header {
+  margin-bottom: get-size('600');
+
+  @include media-query('md') {
+    margin-bottom: get-size('600');
   }
 }
