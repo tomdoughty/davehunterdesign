@@ -92,6 +92,7 @@ h4 {
 @import 'blocks/button';
 @import 'blocks/skip-link';
 @import 'blocks/card';
+@import 'blocks/hero';
 
 .main {
   background: get-color('light-glare');
@@ -204,27 +205,26 @@ ul.list-group {
   }
 }
 
-// Hero
-.hero {
-  background: get-color('light');
-  margin-top: -4px;
-  padding: get-size('800') 0;
+.work__header {
+  margin-bottom: get-size('400');
 
-  @include media-query('sm') {
-    padding: get-size('major') 0;
-  }
-
-  .hero--wrapper{
-    @include media-query('lg') {
-      width: 50%;
-    }
+  @include media-query('md') {
+    margin-bottom: get-size('500');
   }
 }
 
-.hero__header {
-  margin-bottom: get-size('600');
+.work__description {
+  margin-bottom: get-size('700');
 
   @include media-query('md') {
-    margin-bottom: get-size('600');
+    margin-bottom: get-size('800');
+  }
+}
+
+.work__img {
+  margin-bottom: get-size('700');
+
+  @include media-query('md') {
+    margin-bottom: get-size('800');
   }
 }
