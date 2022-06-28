@@ -1,14 +1,14 @@
 ul.card-group {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100%);
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
-  grid-gap: 0;
+  grid-gap: 1rem;
   list-style: none;
   padding-left: 0;
   margin-bottom: get-size('300');
 
-  @include media-query('sm') {
-    grid-template-columns: repeat(auto-fill, 50%);
+  @include media-query('md') {
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: get-size('400');
   }
 }
