@@ -128,21 +128,21 @@ h1 {
 
 h2 {
   font-size: get-size('600');
-  margin-bottom: get-size('500');
+  margin-bottom: get-size('400');
 
   @include media-query('md') {
     font-size: get-size('700');
-    margin-bottom: get-size('600');
+    margin-bottom: get-size('500');
   }
 }
 
 h3 {
   font-size: get-size('500');
-  margin-bottom: get-size('500');
+  margin-bottom: get-size('400');
 
   @include media-query('md') {
     font-size: get-size('600');
-    margin-bottom: get-size('600');
+    margin-bottom: get-size('500');
   }
 }
 
@@ -224,15 +224,15 @@ ul.list-group {
 }
 
 .work__img {
-  margin-bottom: get-size('700');
+  margin-bottom: get-size('600');
 
   @include media-query('md') {
-    margin-bottom: get-size('800');
+    margin-bottom: get-size('700');
   }
 }
 
 .work__img--border {
-  border: 4px solid  get-color('light');
+  border: 4px solid  get-color('light-shade');
 }
 
 .img-group {
@@ -249,5 +249,16 @@ ul.list-group {
 
   img {
     margin-bottom: 0;
+  }
+}
+
+img + h3,
+img + h2,
+p + h3,
+p + h2 {
+  padding-top: get-size('400');
+
+  @include media-query('md') {
+    padding-top: get-size('500');
   }
 }
