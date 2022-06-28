@@ -240,18 +240,39 @@ ul.list-group {
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1rem;
-  margin-bottom: get-size('600');
+  margin-bottom: get-size('500');
 
   @include media-query('md') {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: get-size('700');
+    margin-bottom: get-size('600');
   }
 
-  img {
+  .fig {
     margin-bottom: 0;
   }
 }
 
+.fig {
+  margin-bottom: get-size('500');
+
+  @include media-query('md') {
+    margin-bottom: get-size('600');
+  }
+}
+
+.fig__img {
+  border: 4px solid get-color('light-shade');
+  border-bottom: 0;
+}
+
+.fig__caption {
+  background: get-color('light-shade');
+  font-size: get-size('400');
+  padding: get-size('400');
+}
+
+.fig + h3,
+.fig + h2,
 img + h3,
 img + h2,
 p + h3,

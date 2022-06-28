@@ -22,7 +22,7 @@ ul.card-group {
 }
 
 .card__img {
-  margin-bottom: get-size('500');
+  margin-bottom: get-size('400');
 
   @include media-query('sm') {
     margin-bottom: get-size('500');
@@ -31,7 +31,9 @@ ul.card-group {
 
 .card__title {
   font-size: get-size('450');
+  line-height: 1.4;
   margin-bottom: get-size('200');
+  padding: 0;
 
   @include media-query('sm') {
     font-size: get-size('500');
