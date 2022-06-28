@@ -128,11 +128,11 @@ h1 {
 
 h2 {
   font-size: get-size('600');
-  margin-bottom: get-size('600');
+  margin-bottom: get-size('500');
 
   @include media-query('md') {
     font-size: get-size('700');
-    margin-bottom: get-size('700');
+    margin-bottom: get-size('600');
   }
 }
 
@@ -210,6 +210,7 @@ ul.list-group {
 
   @include media-query('md') {
     margin-bottom: get-size('500');
+    max-width: 75%;
   }
 }
 
@@ -218,6 +219,7 @@ ul.list-group {
 
   @include media-query('md') {
     margin-bottom: get-size('800');
+    max-width: 75%;
   }
 }
 
@@ -226,5 +228,26 @@ ul.list-group {
 
   @include media-query('md') {
     margin-bottom: get-size('800');
+  }
+}
+
+.work__img--border {
+  border: 4px solid  get-color('light');
+}
+
+.img-group {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin-bottom: get-size('600');
+
+  @include media-query('md') {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: get-size('700');
+  }
+
+  img {
+    margin-bottom: 0;
   }
 }
