@@ -1,0 +1,66 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+
+    <style>{% include "css/base.css" %}</style>
+
+    {# Add facility for pages to delare an array of base styles #}
+    {% if pagebaseStyles %}
+      {% for item in pagebaseStyles %}
+        <style>{% include item %}</style>
+      {% endfor %}
+    {% endif %}
+
+    <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" />
+
+    {# Add facility for pages to declare an array of stylesheet paths #}
+    {% if pageStylesheets %}
+      {% for item in pageStylesheets %}
+        <link rel="stylesheet" media="print" href="{{ item }}?{{ assetHash }}" onload="this.media='all'" />
+      {% endfor %}
+    {% endif %}
+
+  </head>
+  <body>
+    <div class="site-wrap">
+      {% include "partials/site-head.html" %}
+
+      {% block hero %}
+      {% endblock %}
+    
+      <main tabindex="-1" id="main-content" class="main">
+        {% block mainInner %}
+        {% endblock %}
+      </main>
+    
+      <footer role="contentinfo" class="site-foot">
+        <div class="wrapper">
+          I'm on
+          <a href="https://twitter.com/dave_hunter_">Twitter</a>, 
+          <a href="https://www.linkedin.com/in/david-hunter-438262145/">LinkedIn</a> and 
+          <a href="https://github.com/davidhunter08">GitHub</a>
+        </div>
+      </footer>
+    </div> 
+    
+    <script>
+      // Loops through dom and finds all elements with nhsuk-card--clickable class
+      document.querySelectorAll('.card--clickable').forEach((card) => {
+          // Check if card has a link within it
+          if (card.querySelector('a') !== null) {
+            // Clicks the link within the heading to navigate to desired page
+            card.addEventListener('click', () => {
+              card.querySelector('a').click();
+            });
+          }
+        });
+    </script>
+
+  </body>
+</html>

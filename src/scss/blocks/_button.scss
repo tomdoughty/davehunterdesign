@@ -1,0 +1,34 @@
+.button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background: get-color('primary');
+  border-radius: 8px;
+  color: get-color('light-glare');
+  box-shadow: 0 2px 0 0 get-color('primary-shade');
+  text-decoration: none;
+  text-align: center;
+
+  // Make sure hover state trumps all variants with a good ol’ important
+  &:hover {
+    background: get-color('primary-shade') !important;
+    color: get-color('light-glare') !important;
+  }
+
+  // Add a ghost modifier
+  &[data-variant='ghost'] {
+    background: transparent;
+    color: get-color('quaternary-glare');
+  }
+}
+
+.button--outline {
+  background: transparent;
+  border: 2px solid get-color('primary');
+  color: get-color('primary');
+  box-shadow: none;
+
+  &:hover {
+    background: get-color('primary') !important;
+    color: get-color('light-glare') !important;
+  }
+}

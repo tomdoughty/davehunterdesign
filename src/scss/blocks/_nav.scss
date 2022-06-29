@@ -1,0 +1,63 @@
+.nav {
+  line-height: 1;
+  margin-top: get-size('200');
+
+  @include media-query('md') {
+    margin-top: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-query('md') {
+      padding-inline-start: get-size('600');
+    }
+
+    > * {
+      padding-inline-start: get-size('400');
+
+      @include media-query('md') {
+        padding-inline-start: get-size('600');
+      }
+    }
+
+    > *:first-child {
+      padding-inline-start: 0;
+
+      @include media-query('md') {
+        padding-inline-start: get-size('600');
+      }
+    }
+    
+  }
+
+  a {
+    color: get-color('primary');
+    display: block;
+    font-size: get-size('400');
+    font-weight: bold;
+    position: relative;
+    text-decoration: underline;
+
+    @include media-query('sm') {
+      font-size: get-size('450');
+    }
+
+    // Adds the fake border to active state items
+    &[data-state='active'],
+    &[aria-current='page'] {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.25rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 0.25rem;
+        background: get-color('primary-shade');
+      }
+    }
+  }
+}

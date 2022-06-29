@@ -1,0 +1,31 @@
+.site-head {
+  background: get-color('light-glare');
+  border-bottom: 4px solid  get-color('light');
+  padding: get-size('500') 0;
+
+  @include media-query('sm') {
+    padding: get-size('600') 0;
+  }
+}
+
+.site-head__inner {
+  @include media-query('md') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site-head__brand {
+  color: get-color('dark-shade');
+  flex-shrink: 0;
+  font-size: get-size('450');
+  font-weight: 700;
+  margin-inline-end: get-size('600'); // Prevents nav bunching up to the logo
+  text-decoration: none;
+
+  @include media-query('sm') {
+    font-size: get-size('450');
+  }
+}
